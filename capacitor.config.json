@@ -1,0 +1,7 @@
+{
+  "appId": "com.example.app",
+  "appName": "vue-ionic4-capacitor-demo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist"
+}
