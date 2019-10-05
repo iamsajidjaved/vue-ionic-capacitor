@@ -12,17 +12,25 @@
   The world is your oyster.
   <p>If you get lost, the <a href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
   <ion-button @click="goToAbout" full>Go to About</ion-button>
+  <ion-button @click="showDialogAlert" full>Show Alert Box</ion-button>
 
 </ion-content>
 </ion-app>
 </template>
 <script>
+import { Plugins } from '@capacitor/core';
 export default {
   name: 'HomeComponent',
   methods: {
     goToAbout () {
       this.$router.push('AboutComponent')
     },
+    async showDialogAlert(){
+      await Plugins.Modals.alert({
+          title: 'Alert',
+          message: 'This is an example alert box'
+      });
+    }
 }
 }
 </script>
