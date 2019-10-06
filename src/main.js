@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+defineCustomElements(window);  // add this line
 import  HomeComponent  from  './components/HomeComponent.vue'
 import  AboutComponent  from  './components/AboutComponent.vue'
 
